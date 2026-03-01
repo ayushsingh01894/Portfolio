@@ -1,91 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <title>Ayush Singh | Web Developer</title>
+  <title>Ayush Singh | Data Analytics | Machine Learning | Web Developer </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">Ayush Singh</div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+  <div class="bg-light"></div>
   <!-- HERO -->
   <section class="hero">
+
+  <div class="hero-left">
     <h1 class="glow-text">Ayush Singh</h1>
-    <p class="tagline">Student · Web Developer · Creative Coder</p>
+
+    <div class="typing-wrapper">
+      <span id="typing"></span>
+    </div>
+
     <div class="hero-buttons">
       <a href="#projects" class="btn">View Projects</a>
       <a href="#contact" class="btn outline">Contact Me</a>
     </div>
-  </section>
+  </div>
 
+  <div class="hero-right">
+    <div class="image-slider">
+      <img id="slider-img" src="images/pic1.jpeg" alt="Profile Image">
+    </div>
+  </div>
+
+</section>
   <!-- ABOUT -->
   <section class="about" id="about">
     <h2>About Me</h2>
+
     <p>
-      I am a Master of Computer Applications student with a strong interest in
-      web development, backend systems, and creative coding. I enjoy building
-      real-world applications that combine logic, design, and performance.
+      I am a Master of Computer Applications student passionate about
+      building modern web applications and data-driven solutions.
     </p>
+
+    <p>
+      I specialize in full-stack development and machine learning projects,
+      with hands-on experience in Flask-based systems, predictive modeling,
+      and data visualization.
+    </p>
+
+    <p>
+      I enjoy solving real-world problems using clean UI design,
+      efficient backend logic, and performance optimization.
+    </p>
+
+    <div class="tech-badges">
+      <span>Web Development</span>
+      <span>Machine Learning</span>
+      <span>Data Analytics</span>
+      <span>Backend Systems</span>
+      <span>Problem Solving</span>
+    </div>
   </section>
 
   <!-- SKILLS -->
-  <section class="skills">
+  <section class="skills" id="skills">
     <h2>Skills</h2>
-    <div class="skill-grid">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>Python</span>
-      <span>Flask</span>
-      <span>SQL</span>
-      <span>Git & GitHub</span>
+
+    <div class="skills-container">
+
+      <div class="skill-category">
+        <h3>Frontend Development</h3>
+        <div class="skill-badges">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Backend & Programming</h3>
+        <div class="skill-badges">
+          <span>Python</span>
+          <span>Flask</span>
+          <span>Java</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Data Analytics & Machine Learning</h3>
+        <div class="skill-badges">
+          <span>Pandas</span>
+          <span>NumPy</span>
+          <span>Matplotlib</span>
+          <span>Seaborn</span>
+          <span>Scikit-Learn</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Database & Tools</h3>
+        <div class="skill-badges">
+          <span>SQL</span>
+          <span>MongoDB</span>
+          <span>Power BI</span>
+          <span>Excel</span>
+          <span>MS Word</span>
+        </div>
+      </div>
+
     </div>
   </section>
-
-  <!-- PROJECTS -->
+  <!-- projects -->
   <section class="projects" id="projects">
     <h2>Projects</h2>
 
-    <div class="project-card">
-      <h3>NEXA – Chat Bot</h3>
-      <p>
-        A chatbot application designed to simulate real-time conversations with
-        users using modern web technologies.
-      </p>
-      <div class="project-links">
-        <a href="#" target="_blank">GitHub</a>
-      </div>
-    </div>
+    <div class="project-grid">
 
-    <div class="project-card">
-      <h3>QR Code Attendance System</h3>
-      <p>
-        A Flask-based automated attendance system using QR code scanning to
-        track student attendance efficiently and securely.
-      </p>
-      <div class="project-links">
-        <a href="#" target="_blank">GitHub</a>
+      <div class="project-card">
+        <h3>Machine Learning College Project</h3>
+        <p>ML based academic project demonstrating predictive modeling concepts.</p>
+        <div class="project-links">
+          <a href="projects/ml-college.html">View Details</a>
+          <a href="https://github.com/ayushsingh01894/Machine_learning_clg" target="_blank">GitHub</a>
+        </div>
       </div>
-    </div>
 
+      <div class="project-card">
+        <h3>House Price Prediction</h3>
+        <p>Machine learning model predicting house prices using regression techniques.</p>
+        <div class="project-links">
+          <a href="projects/house-price.html">View Details</a>
+          <a href="https://github.com/ayushsingh01894/House-Price-Prediction-ML" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>QR Attendance System</h3>
+        <p>Flask-based automated student attendance tracking using QR codes.</p>
+        <div class="project-links">
+          <a href="projects/qr-attendance.html">View Details</a>
+          <a href="https://github.com/ayushsingh01894/Qr-Attendance-System" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>E-Commerce Product Performance</h3>
+        <p>Data analytics project analyzing sales trends and product profitability.</p>
+        <div class="project-links">
+          <a href="projects/ecommerce.html">View Details</a>
+          <a href="https://github.com/ayushsingh01894/E-Commerce-Product-Performance" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Shop Website</h3>
+        <p>Responsive shopping website with modern UI design.</p>
+        <div class="project-links">
+          <a href="projects/shop-website.html">View Details</a>
+          <a href="https://github.com/ayushsingh01894/Shop-Website" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+    </div>
   </section>
-
   <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <h2>Contact</h2>
-    <p>Email: ayush.singh01894@gmail.com</p>
-    <p>
-      <a href="https://github.com/ayushsingh01894" target="_blank">GitHub</a> |
-      <a href="https://www.linkedin.com/in/ayush-singh-ba4306287" target="_blank">LinkedIn</a>
-    </p>
-  </section>
+  <section id="contact" class="contact-section">
+
+  <h2>Contact Me</h2>
+
+  <div class="contact-container">
+
+    <div class="contact-left">
+      <p><strong>Email:</strong></p>
+      <a href="mailto:ayush.singh01894@gmail.com" class="contact-link">
+        ayush.singh01894@gmail.com
+      </a>
+
+      <div class="social-buttons">
+        <a href="https://github.com/ayushsingh01894" target="_blank" class="github-btn">
+          <i class="fab fa-github"></i> GitHub Profile
+        </a>
+
+        <a href="https://in.linkedin.com/in/ayush-singh-ba4306287" target="_blank" class="linkedin-btn">
+          <i class="fab fa-linkedin"></i> LinkedIn Profile
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-right">
+      <div class="contact-card">
+        <h3>Let’s Connect</h3>
+        <p>
+          I am open to internships, freelance projects, and full-time opportunities.
+          Feel free to reach out for collaborations or discussions.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
 
   <!-- JS -->
   <script src="main.js"></script>
 </body>
+
 </html>
