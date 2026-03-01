@@ -14,7 +14,7 @@ This portfolio showcases my skills in:
 
 ## 🌐 Live Preview
 
-Coming Soon...
+https://ayushsingh01894.github.io/Portfolio/
 
 ---
 
